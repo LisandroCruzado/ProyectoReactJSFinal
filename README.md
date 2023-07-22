@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm Lisandro this is my 2da Pre Entrega REACT JS ![ElementAtomGIF](https://github.com/LisandroCruzado/PreEntrega2Cruzado/assets/120687270/7e7116a1-6f58-4178-9f69-bc3665e2db8c)
+<h1 align="center">Hi 👋, I'm Lisandro this is my 2da Pre Entrega REACT JS !
 </h1>
 <h3 align="center">A passionate Full Stack developer from Argentina</h3>
 
