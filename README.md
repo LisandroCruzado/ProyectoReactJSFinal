@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm Lisandro this is my 2da Pre Entrega REACT JS !
+<h1 align="center">Hi 👋, 2da Pre Entrega REACT JS !
 </h1>
 <h3 align="center">A passionate Full Stack developer from Argentina</h3>
 
