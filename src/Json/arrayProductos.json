@@ -1,0 +1,68 @@
+[
+{   
+    "id":1,
+    "nombre":"Dolce & Gabbana The One for Men EDP 100 ml",
+    "imagen":"https://rougeb2car.vtexassets.com/arquivos/ids/167528/The-One-for-Men-EDP-100ml-2.jpg?v=637783055585870000",
+    "descripcion":"Dolce&Gabbana The One for Men es un perfume sensual y elegante,decididamente moderno, aunque también único e intemporalmente clásico.Es la versión masculina y natural de Dolce&Gabbana The One. Un perfumeoriental especiado desarrollado con la armonía de las notas de tabaco yespecias refinadas. El frasco de cristal, elegantemente sólido, ofrecelíneas limpias y geométricas con un diseño clásico y refinado, adornadocon un cuello plateado coronado con un sofisticado tapón rectangular enmarrón metalizado mate. El frasco de The One for Men simboliza el lujocontemporáneo de Dolce&Gabbana. Las proporciones del frasco recuerdan aun traje a medida realizado por la casa de moda. Notas de salida: Lavibrante elegancia de las notas de salida procede de la apeteciblecombinación de pomelo, cilantro y albahaca. Notas de corazón: Las notascálidas y picantes de cardamomo y jengibre dirigen la fuerte sensualidademblemática de Dolce&Gabbana The One for Men. Notas de fondo: Elperfume, con el tiempo, da paso a la auténtica masculinidad de lasprofundas notas de ámbar y tabaco secado junto con la madera de cedro.",
+    "categoria": "perfumes",
+    "precio": 48950,
+    "stock": 7
+},{
+    "id":2,
+    "nombre":"Carolina Herrera Privé for Men EDT 50ml",
+    "imagen":"https://d2r9epyceweg5n.cloudfront.net/stores/001/158/654/products/ch-men-prive-carolina-herrera-edt-50ml-d_nq_np_865656-mla41508277845_042020-f1-99b043c1bcdb1a8e9c15911882557952-1024-1024.jpg",
+    "descripcion":"CH Men Prive de Carolina Herrera es una fragancia de la familia olfativa Cuero para Hombres. CH Men Prive se lanzó en 2015. Las Notas de Salida son whisky y toronja (pomelo) y toronja (pomelo); las Notas de Corazón son cardamomo, lavanda, salvia y tomillo rojo; las Notas de Fondo son cuero, haba tonka, benjuí y notas amaderadas.",
+    "categoria": "perfumes",
+    "precio": 50000,
+    "stock": 7
+},{
+    "id":3,
+    "nombre":"Carolina Herrera 212 VIP Black for Men EDP 100ml",
+    "imagen":"https://static.beautytocare.com/media/catalog/product/cache/global/image/85e4522595efc69f496374d01ef2bf13/c/a/carolina-herrera-212-vip-black-for-men-eau-de-parfum-200ml.jpg",
+    "descripcion":"Sumérgete en el mundo de la sofisticación y el estilo con el perfume Carolina Herrera 212 VIP Black EDP de 200 ml para hombre. Este exclusivo Eau de Parfum te hará destacar en cualquier ocasión gracias a su aroma aromático de madera de ámbar, perfecto para el hombre moderno y elegante.",
+    "categoria": "perfumes",
+    "precio": 42198,
+    "stock": 7
+},{
+    "id":4,
+    "nombre":"Jean Paul Gaultier Le Beau for Men EDT 125ml",
+    "imagen": "https://priveperfumeshn.com/cdn/shop/products/Perfume-Jean-Paul-Gaultier-Le-Beau-EDT-M-125-ml_b99887ff-8dd4-4d1d-bcb6-73aa115fd286.jpg?v=1628746360",
+    "descripcion":"Sumérgete en el mundo de la seducción y el estilo con Jean Paul Gaultier Le Beau EDT 75 ml para hombre. Este perfume exclusivo de la reconocida marca Jean Paul Gaultier es perfecto para aquellos que buscan una fragancia única y sofisticada. Con su aroma amaderado aromático, Le Beau te transportará a un mundo de elegancia y distinción. Las notas olfativas de bergamota, geranio, haba tonka y madera de coco se combinan para crear una fragancia inolvidable que te hará destacar en cualquier ocasión. El Eau de Toilette de 75 ml es ideal para llevar contigo y refrescar tu aroma durante todo el día. No esperes más para disfrutar de la experiencia que solo Jean Paul Gaultier Le Beau puede ofrecerte.",
+    "categoria": "perfumes",
+    "precio": 48950,
+    "stock": 7
+},{
+    "id":5,
+    "nombre":"Contour Set Regina",
+    "imagen":"https://http2.mlstatic.com/D_NQ_NP_762167-MLA69980073498_062023-O.webp",
+    "descripcion":"Kit de tres piezas bestsellers seleccionadas por nuestra makeup artist furor en Instagram.",
+    "categoria": "maquillaje",
+    "precio": 62000,
+    "stock": 7
+},{
+    "id":6,
+    "nombre":"MAC Set de Maquillaje en 3 pasos.",
+    "imagen":"https://http2.mlstatic.com/D_NQ_NP_904030-MLA45226608460_032021-O.webp",
+    "descripcion":"El polvo altamente pigmentado se aplica uniformemente y se difumina fácilmente. Puede usarse en húmedo o seco.",
+    "categoria": "maquillaje",
+    "precio": 28950,
+    "stock": 7
+},{
+    "id":7,
+    "nombre":"Kit Facial Vichy Mineral 89 Booster + Probiotic + Ojos",
+    "imagen":"https://http2.mlstatic.com/D_NQ_NP_643374-MLA46634115492_072021-O.webp",
+    "descripcion":"Vichy es una marca con larga trayectoria y experiencia en el cuidado de la piel. Es reconocida por utilizar en sus productos componentes naturales como agua termal, minerales regenerativos, suavizantes y fortificados.",
+    "categoria": "tratamientos",
+    "precio": 17950,
+    "stock": 7
+}
+,{
+    "id":8,
+    "nombre":"Kit Tratamiento Revitalift Retinol: Serum Rostro + Retinol",
+    "imagen":"https://http2.mlstatic.com/D_NQ_NP_789046-MLA54512766917_032023-O.webp",
+    "descripcion":"Decubrí el Sérum Noche Revitalift Retinol, formulado con RetinolPuro.Este activo antiedad por excelencia, posee la capacidad de en solodossemanas, reducir las arrugas más profundas, mejorar la textura delapiel, unificar el tono, devolverle la elasticidad y luminosidad alapiel. Al probarse, los resultados fueron una reducción de arrugasparael 100% de las mujeres que utilizaron el producto. Exclusivo parausonocturno. Validado por Dermatólogos.",
+    "categoria": "tratamientos",
+    "precio": 18950,
+    "stock": 7
+}
+]
