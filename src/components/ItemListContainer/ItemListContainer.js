@@ -1,47 +1,42 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
-import arrayProductos from '../../Json/arrayProductos.json';
-import ItemList from '../ItemList/ItemList';
-import "./ItemListContainer.css";
 
+import ItemList from '../ItemList/ItemList';
+import { useParams } from 'react-router-dom';
+import { collection, getDocs, getFirestore, limit, query, where } from 'firebase/firestore';
+import Spiner from '../Spinner/Spiner';
 
 const ItemListContainer = () => {
-     const [item, setItem] = useState([]);
-     const {id} = useParams();
 
-   useEffect(()=>{
-     const fetchData = async()=>{
-        try{
-        const data = await new Promise((resolve)=>{
-        setTimeout(()=>{
-        resolve(id ? arrayProductos.filter(item=> item.categoria === id) : arrayProductos)
-       }, 2000);
-        });
-        setItem(data);
-      }catch(error){
-        console.log('Error:', error);
-      }
-    };
-    fetchData();
-//      const promesa = new Promise((resolve)=>{
- //       setTimeout(()=>{
- //         resolve(id ? arrayProductos.filter(item=> item.categoria === id) : arrayProductos)
-  //      }, 2000)
-  //    });
-  //    promesa.then((data)=>{
-   //     setItem(data)
-   //   })
-     }, [id])
+  const { categoriaId } = useParams()
+  
+  const [items, setItems] = useState([])
+  const [load, setLoad] = useState(true)
 
-  return (
-    <div className='container'>
-      <div className='row'>
-       <ItemList item={item}/>
+  const getData = async (categoria) => {
+    setLoad(true)
+    const querydb = getFirestore();
+    const queryCollection = categoria ? query(collection(querydb, 'products'), where("categoryId", "==", categoria), limit(3))
+      : collection(querydb, 'products');
+    const resultado = await getDocs(queryCollection)
+    const datos = resultado.docs.map(p => ({ id: p.id, ...p.data() }))
+    setItems(datos)
+    setLoad(false)
+  }
+
+  useEffect(()=>{
+      getData(categoriaId)
+  },[categoriaId])
+
+    return (
+      <>
+      <div className='container'>
+        <div className='d-flex justify content-center mb'>
+        {load ? <Spiner/> : <ItemList item={items} />}
+        </div>
       </div>
-      
-    </div>
-  )
-}
+      </>
+    );
+  };
 
 export default ItemListContainer

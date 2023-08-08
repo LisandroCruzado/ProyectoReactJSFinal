@@ -1,5 +1,9 @@
 .listItem {
     position: relative;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0 10px;
+    gap: 0;
+    padding: 10px;
 }
 
 .listItem::after {
@@ -14,7 +18,22 @@
     transition: all 0.3s ease-in-out;
 }
 
+.listItem:hover{
+    transform: scale(1.09);
+}
 .listItem:hover::after {
     visibility: visible;
     transform: scaleX(1);
+}
+
+.cartera{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cartera h5{
+    margin-top: 12px;
+    margin-right: 5px;
+
 }

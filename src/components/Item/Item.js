@@ -1,19 +1,31 @@
-import React from 'react'
-import {Link} from 'react-router-dom';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 
-const Item = ({item}) => {
+const Item = ({ item }) => {
   return (
     <Link to={"/item/" + item.id} className='text-decoration-none'>
-        <div className='container'>
-            <div className='card border border-0'>
-                <img src= {item.imagen} className='card-img-top' alt={item.nombre}/>
-                    <div className='card-body text-center'>
-                        <p className='card-text'>{item.nombre}</p>
-                    </div>
+      <div className="mb-2" style={{ margin: '10px', width: '300px' }}>
+        <Card style={{ width: '100%', height: '430px' }}>
+          <div style={{ width: '100%', height: '300px', overflow: 'hidden' }}>
+            <Card.Img
+              variant="top"
+              src={item.img}
+              alt={item.title}
+              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+            />
+          </div>
+          <Card.Body>
+            <Card.Title className='d-flex justify-content-center align-items-center'>{item.title}</Card.Title>
+            <div className="d-flex justify-content-center align-items-center">
+              <Button variant="dark">VER PRODUCTO</Button>
             </div>
-        </div>
+          </Card.Body>
+        </Card>
+      </div>
     </Link>
-  )
-}
+  );
+};
 
 export default Item;
