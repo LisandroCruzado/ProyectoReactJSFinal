@@ -33,3 +33,7 @@
 .cantPrecio{
     font-size: 12px;
 }
+
+.cart-item-price{
+    text-align: center;
+}

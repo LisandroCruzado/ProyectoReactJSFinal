@@ -1,7 +1,7 @@
 import { addDoc, collection, getFirestore } from 'firebase/firestore';
 import React, { useContext, useState } from 'react'
 import { CartContext } from '../../context/CartContext'
-import './Checkout.css'; // Importa el archivo de estilos de Checkout
+import './Checkout.css';
 
 export const Checkout = () => {
     const [orderId, setOrderId] = useState();
@@ -9,7 +9,7 @@ export const Checkout = () => {
     const [buyer, setBuyer] = useState({
       Nombre : "",
       Email : "",
-      ConfirmarEmail : "", // Nuevo campo para confirmación de correo
+      ConfirmarEmail : "",
       Telefono : ""
     });
     
@@ -25,7 +25,6 @@ export const Checkout = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Verificar que los correos electrónicos coincidan
         if (Email === ConfirmarEmail) {
             const total = cart.reduce((acum, unItem) => acum + (unItem.price * unItem.cant), 0);
             const dia = new Date();

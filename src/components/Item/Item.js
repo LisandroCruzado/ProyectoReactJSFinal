@@ -16,10 +16,12 @@ const Item = ({ item }) => {
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
           </div>
-          <Card.Body>
-            <Card.Title className='d-flex justify-content-center align-items-center'>{item.title}</Card.Title>
-            <div className="d-flex justify-content-center align-items-center">
-              <Button variant="dark">VER PRODUCTO</Button>
+          <Card.Body className='d-flex flex-column justify-content-between'>
+            <div className='d-flex flex-column align-items-center'>
+              <Card.Title className='text-center mb-0'>{item.title}</Card.Title>
+              <div className="mt-3">
+                <Button variant="dark">VER PRODUCTO</Button>
+              </div>
             </div>
           </Card.Body>
         </Card>

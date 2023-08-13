@@ -1,15 +1,22 @@
 import React, { useContext, useState } from 'react';
 import { CartContext } from '../../context/CartContext';
 import { Link } from 'react-router-dom';
-import './Cart.css'; // Importa el archivo de estilos de Cart
+import './Cart.css';
 
 export const Cart = () => {
-  const { cart } = useContext(CartContext);
+  const { cart, clearCart, removeItem } = useContext(CartContext);
 
   const [cartItems, setCartItems] = useState(cart);
 
   const handleEmptyCart = () => {
     setCartItems([]);
+    clearCart();
+  };
+
+  const handleRemoveItem = (itemId) => {
+    const updatedCart = cartItems.filter(item => item.id !== itemId);
+    setCartItems(updatedCart);
+    removeItem(itemId);
   };
 
   return (
@@ -31,6 +38,7 @@ export const Cart = () => {
                     <p><span className='cantPrecio'>Cantidad :</span>   <span className='cantYtotal'>{unItem.cant}</span></p>
                     <p><span className='cantPrecio'>Precio:</span>   <span className='cantYtotal'>${unItem.total.toFixed(2)}</span></p>
                   </div>
+                  <button className='btn btn-sm btn-danger' onClick={() => handleRemoveItem(unItem.id)}>Borrar</button>
                 </li>
               ))}
             </ul>
@@ -40,7 +48,7 @@ export const Cart = () => {
 
       <div className='text-center mt-4'>
         <button className='btn btn-outline-dark' onClick={handleEmptyCart}>Vaciar Carrito</button>
-        &nbsp;{/* Agrega un espacio */}
+        &nbsp;
         <Link to='/checkout'>
           <button className='btn btn-dark'>Finalizar Compra</button>
         </Link>
