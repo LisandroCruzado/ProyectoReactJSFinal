@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../assets/images/logo-wide (768 × 500 px).png'
+import logo from '../../assets/images/logo-wide (768 × 500 px).png'
 import { Container } from 'react-bootstrap';
 import './Footer.css'
 

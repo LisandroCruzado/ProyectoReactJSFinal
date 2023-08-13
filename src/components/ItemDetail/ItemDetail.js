@@ -1,50 +1,38 @@
-import React, { useState, useContext } from 'react'
+import React, { useContext } from 'react'
 import ItemCount from '../ItemCount/ItemCount'
-// import { Link } from 'react-router-dom';
-import { doc, getFirestore, updateDoc } from 'firebase/firestore';
 import { CartContext } from '../../context/CartContext';
+import './ItemDetail.css'
 
 const ItemDetail = ({ item }) => {
-    const [stock, setStock] = useState(item.stock)
 
     const { addItem } = useContext(CartContext)
 
 
     const handleOnAdd = (count) => {
-        addItem({ id: item.id, price: item.price, name: item.name, img: item.img }, count)
+        addItem({ id: item.id, price: item.price, title: item.title, img: item.img }, count)
     };
-console.log(item)
-    const handleStock = () => {
-        const querydb = getFirestore()
-        const itemDoc = doc(querydb, "products", item.id)
-        const stockNuevo = stock + 3
-        updateDoc(itemDoc, { stock: stockNuevo })
-        setStock(stockNuevo)
-    }
 
     return (
-        <div className='container'>
-        <h1 className='text-center' >{item.title}</h1>
-        <div className='row'>
-            <div className='col'>
-                <img src={item.img} className='rounded mx-auto d-block img_med' alt={item.nombre} />
-            </div>
-            <div className='col'>
-                <h3>DESCRIPCION:</h3>
-                <p>{item.description}</p>
-                <br />
-
-                <h3>PRECIO: {item.price}</h3>
-                <hr />
-                <br />
-                <br />
-                <br />
-                <ItemCount stock={stock} initial={1} onAdd={handleOnAdd} />
-                <br />
-                <button onClick={handleStock}>Aumentar stock en 3</button>
-            </div>
-        </div>
+<div className='container' id='productContainer'>
+  <h1 className='text-center my-3 p-3'><b>{item.title}</b></h1>
+  <div className='row justify-content-center align-items-center'>
+    <div className='col-md-6'>
+      <img src={item.img} className='rounded mx-auto d-block img_med' alt={item.nombre} />
     </div>
+    <div className='col-md-6'>
+      <div className='row'>
+        <div className='col mt-4 mb-4'>
+          <h5>Descripción</h5>
+          <p>{item.description}</p>
+          <h4 className='price'>${item.price}</h4>
+          <ItemCount stock={item.stock} initial={1} onAdd={handleOnAdd} />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
     )
 }
 

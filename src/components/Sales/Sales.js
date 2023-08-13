@@ -6,9 +6,9 @@ import { Container } from 'react-bootstrap';
 function Sales() {
     return(
     <>
-    <Container>
-        <Image src={gif} fluid className="my-4" />;
-        <Image src={banner} fluid className="mb-4" />;
+    <Container className="d-flex flex-column align-items-center justify-content-center">
+        <Image src={gif} fluid className="my-4" />
+        <Image src={banner} fluid className="mb-4" />
     </Container>
     </>
   );

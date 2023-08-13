@@ -1,0 +1,22 @@
+#productContainer{
+    background-color: #db9a8f13;
+    border-radius: 20px;
+    height: 600px;
+}
+#productContainer h1{
+    font-family:sans-serif;
+}
+#productDetail{
+    display: flex;
+}
+
+.price{
+    color: #d3c081;
+    font-size: xx-large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.col-md-6 img{
+    width: 480px;
+    height: auto;
+}

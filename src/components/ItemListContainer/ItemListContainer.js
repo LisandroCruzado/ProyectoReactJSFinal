@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 
 import ItemList from '../ItemList/ItemList';
 import { useParams } from 'react-router-dom';
-import { collection, getDocs, getFirestore, limit, query, where } from 'firebase/firestore';
+import { collection, getDocs, getFirestore, query, where } from 'firebase/firestore';
 import Spiner from '../Spinner/Spiner';
 
 const ItemListContainer = () => {
@@ -16,7 +16,7 @@ const ItemListContainer = () => {
   const getData = async (categoria) => {
     setLoad(true)
     const querydb = getFirestore();
-    const queryCollection = categoria ? query(collection(querydb, 'products'), where("categoryId", "==", categoria), limit(3))
+    const queryCollection = categoria ? query(collection(querydb, 'products'), where("categoryId", "==", categoria))
       : collection(querydb, 'products');
     const resultado = await getDocs(queryCollection)
     const datos = resultado.docs.map(p => ({ id: p.id, ...p.data() }))

@@ -4,7 +4,7 @@ import './ItemCount.css'
 
 const ItemCount = ({ stock, initial, onAdd }) => {
   const [count, setCount] = useState(initial);
- 
+
   const incrementar = () => {
     if(count<stock){
       setCount(count+1)
@@ -21,9 +21,9 @@ const ItemCount = ({ stock, initial, onAdd }) => {
       <div className="row" id="ajuste">
         <div className="col-md-4 d-flex justify-content-center">
           <div className="btn-group" role="group" aria-label="Basic outlined example">
-          <button onClick={() => decrementar()} className='btn btn_item_count'   >-</button>
+          <button onClick={() => decrementar()} className='btn btn_item_count'   ><b>-</b></button>
             <h3>{count}</h3>
-          <button onClick={() => incrementar()} className='btn btn_item_count' >+</button>
+          <button onClick={() => incrementar()} className='btn btn_item_count' ><b>+</b></button>
           </div>
         </div>
         <div className="col-md-4 d-flex justify-content-center">

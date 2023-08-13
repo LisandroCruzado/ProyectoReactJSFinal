@@ -7,31 +7,29 @@ import { Link } from "react-router-dom";
 
 function NavBar() {
   return (
-    <>
-      <Navbar bg="light" expand="lg">
-        <Container>
-          <Nav className="me-auto">
-            <Nav.Item>
-              <Nav.Link as={Link} to={"/category/perfumes"} className='listItem'>PERFUMES</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link as={Link} to={"/category/maquillaje"} className='listItem'>MAQUILLAJES</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link as={Link} to={"/category/tratamientos"} className='listItem'>TRATAMIENTOS</Nav.Link>
-            </Nav.Item>
-          </Nav>
+    <Navbar expand="lg" id='nav' className="d-flex justify-content-center align-items-center">
+      <Container>
+        <Nav className="me-auto" id='navSection1'>
+          <Nav.Item>
+            <Nav.Link as={Link} to={"/category/perfumes"} className='listItem'>PERFUMES</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link as={Link} to={"/category/maquillaje"} className='listItem'>MAQUILLAJES</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link as={Link} to={"/category/tratamientos"} className='listItem'>TRATAMIENTOS</Nav.Link>
+          </Nav.Item>
+        </Nav>
+        <div id='navSection2'>
           <Navbar.Brand>
-            <Nav.Item>
-              <Nav.Link as={Link} to={"/"}>
-                <img src={logo} alt="Logo de la marca" width='100px' className='d-inline-block align-top' />
-              </Nav.Link>
-            </Nav.Item>
+            <Nav.Link as={Link} to={"/"}>
+              <img src={logo} alt="Logo de la marca" width='100px' className='d-inline-block align-top' />
+            </Nav.Link>
           </Navbar.Brand>
-          <CartWidget />
-        </Container>
-      </Navbar>
-    </>
+        <CartWidget />
+        </div>
+      </Container>
+    </Navbar>
   );
 }
 
