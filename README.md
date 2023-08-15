@@ -1,5 +1,6 @@
 # FirstSense - Tu Tienda en Línea
 FirstSense es un proyecto de tienda en línea desarrollado en React que te permite explorar y comprar una variedad de productos de manera fácil y conveniente. La aplicación utiliza el contexto de React para gestionar el carrito de compras y ofrece una experiencia de usuario intuitiva y atractiva.
+NETLIFY - [https://firstsense-ecommerce.netlify.app/]
 
 ## Características
 Explora una amplia gama de productos en diferentes categorías.
