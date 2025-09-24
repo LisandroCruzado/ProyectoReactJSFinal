@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBGAjOwOVkYWTNQ8kgw6T_Fr8q3mmKuyLo",
-  authDomain: "coderhouse-ecommerce-d8364.firebaseapp.com",
-  projectId: "coderhouse-ecommerce-d8364",
-  storageBucket: "coderhouse-ecommerce-d8364.appspot.com",
-  messagingSenderId: "89898768307",
-  appId: "1:89898768307:web:22252dcfdd2003e18c5dc6"
+  apiKey: "AIzaSyBmObD9uHqN4jaU6Qd93Ida6OJcJWt4h2k",
+  authDomain: "firstsense-2025.firebaseapp.com",
+  projectId: "firstsense-2025",
+  storageBucket: "firstsense-2025.firebasestorage.app",
+  messagingSenderId: "877770536735",
+  appId: "1:877770536735:web:9e5327c24541e1b8ea222a"
 };
 
 // Initialize Firebase
